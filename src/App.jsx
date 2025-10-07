@@ -163,7 +163,7 @@ export default function App() {
         </div>
         <div className="flex items-center gap-4">
           <div className="text-right">
-            {/* <div className="text-sm text-gray-400">Signed in as</div> */}
+            <div className="text-sm text-gray-400">Signed in as</div>
             <div className="text-sm font-medium  text-gray-100 px-2 py-1 rounded">
               {user.displayName || user.email}
             </div>
