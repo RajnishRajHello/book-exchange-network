@@ -13,11 +13,13 @@ export default function GoogleAd({ className, style }) {
     }
   }, []);
 
+  const mergedStyle = { display: "block", height: "100px", ...style };
+
   return (
-    <div className={className} style={style}>
+    <div className={className} style={{ height: "100px" }}>
       <ins
         className="adsbygoogle"
-        style={{ display: "block" }}
+        style={mergedStyle}
         data-ad-client="ca-pub-7265798690109951"
         data-ad-slot="8134315892"
         data-ad-format="auto"

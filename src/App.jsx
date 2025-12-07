@@ -107,7 +107,7 @@ export default function App() {
         <AddBookForm form={form} setForm={setForm} onSubmit={addBook} />
 
         {/* responsive horizontal ad */}
-        <GoogleAd style={{ margin: "1rem 0" }} />
+      <GoogleAd style={{ margin: "1rem 0" }} />
 
         <BookList books={books} loading={loadingBooks} />
       </main>
