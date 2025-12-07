@@ -3,6 +3,7 @@ import { useAuth } from "./hooks/useAuth";
 import Header from "./components/Header";
 import AddBookForm from "./components/AddBookForm";
 import BookList from "./components/BookList";
+import GoogleAd from "./components/GoogleAd";
 import { fetchBooks, buildAddBookPayload, addBookDoc } from "./services/books";
 
 export default function App() {
@@ -104,6 +105,9 @@ export default function App() {
 
       <main className="max-w-6xl mx-auto">
         <AddBookForm form={form} setForm={setForm} onSubmit={addBook} />
+
+        {/* responsive horizontal ad */}
+        <GoogleAd style={{ margin: "1rem 0" }} />
 
         <BookList books={books} loading={loadingBooks} />
       </main>
